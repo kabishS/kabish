@@ -50,7 +50,7 @@ Portfolio/
 
  🚀 Live Demo
 
-🌐 Website https://kabishs.github.io/Kabish/
+🌐 Website https://kabishs.github.io/kabish/
 
 ---
 
