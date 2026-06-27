@@ -1,12 +1,14 @@
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
-/* ── Mobile Menu (fixed) ── */
+/* ── Mobile Menu (fixed full-screen overlay) ── */
 const navToggle = document.getElementById("mobile-menu-button");
 const navList   = document.getElementById("main-nav");
+const navClose  = document.getElementById("mobile-menu-close");
 
 function openMobileMenu() {
     navList.classList.add("is-open");
     navToggle.classList.add("is-open");
+    navClose.classList.add("is-open");
     navToggle.setAttribute("aria-expanded", "true");
     navToggle.setAttribute("aria-label", "Close navigation menu");
     document.body.classList.add("menu-open");
@@ -15,6 +17,7 @@ function openMobileMenu() {
 function closeMobileMenu() {
     navList.classList.remove("is-open");
     navToggle.classList.remove("is-open");
+    navClose.classList.remove("is-open");
     navToggle.setAttribute("aria-expanded", "false");
     navToggle.setAttribute("aria-label", "Open navigation menu");
     document.body.classList.remove("menu-open");
@@ -29,6 +32,7 @@ function toggleMobileMenu() {
 }
 
 navToggle.addEventListener("click", toggleMobileMenu);
+navClose.addEventListener("click", closeMobileMenu);
 
 // Close when a nav link is tapped
 navList.querySelectorAll(".nav-link").forEach(link => {
