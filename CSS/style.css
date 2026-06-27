@@ -234,36 +234,49 @@ img { max-width: 100%; display: block; }
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ── Responsive Navbar (mobile) ── */
+/* Fixed close (X) button — only visible/positioned in the mobile overlay */
+.nav-close {
+    display: none;
+}
+
+/* ── Responsive Navbar (mobile) — full-screen overlay ── */
 @media (max-width: 767.98px) {
     .nav-toggle { display: flex; }
 
+    /* Full-screen fixed overlay covering the entire viewport */
     .nav-list {
         position: fixed;
-        top: var(--header-height);
+        top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2.25rem;
-        background-color: #0F172A;
-        -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
-        z-index: 55;
+        width: 100%;
+        height: 100vh;
+        background-color: #0F172A; /* matches --primary-bg theme color */
+        list-style: none;
         margin: 0;
         padding: 0;
-        opacity: 0;
-        transition: opacity 0.25s ease;
-        /* Default closed state: not displayed at all. This is the most
-           reliable way to guarantee no overlap with page content, even if
-           a browser mishandles opacity/transition timing. */
-        display: none;
-    }
-    .nav-list.is-open {
+        z-index: 9999;
+
         display: flex;
-        opacity: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.25rem;
+
+        /* Closed state: fully removed from layout and non-interactive,
+           so it can never overlap or block clicks on the hero section. */
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-12px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     }
+
+    /* Open state: smooth fade + slide-in */
+    .nav-list.is-open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .nav-list li { width: 100%; text-align: center; }
     .nav-link {
         font-size: 1.5rem;
@@ -272,6 +285,39 @@ img { max-width: 100%; display: block; }
         padding: 0.5rem 0;
     }
 
+    /* Close (X) button, fixed to the top-right corner of the screen.
+       Visibility is toggled directly via JS adding/removing .is-open,
+       in sync with the overlay itself. */
+    .nav-close {
+        display: block;
+        position: fixed;
+        top: 1.25rem;
+        right: 1.5rem;
+        width: 44px;
+        height: 44px;
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 2rem;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 10000; /* above the overlay itself */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .nav-close.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .nav-close:focus-visible {
+        outline: 2px solid var(--accent-lime);
+        outline-offset: 2px;
+    }
+
+    /* Prevent body scrolling while the menu is open */
     body.menu-open {
         overflow: hidden;
     }
