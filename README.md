@@ -2,7 +2,7 @@
 
 A modern, responsive, and interactive personal portfolio website built using **HTML, CSS, JavaScript, Bootstrap**, and **Tidio (chatbot)**. This portfolio showcases my skills, projects, certifications, education, and contact information while highlighting my journey as a Java Full Stack Developer.
 
-🌐 **Live Demo:** [https://kabishs.github.io/Kabish/](https://kabishs.github.io/Kabish/)
+🌐 **Live Demo:** [https://kabishs.github.io/kabish/](https://kabishs.github.io/kabish/)
 
 ---
 
