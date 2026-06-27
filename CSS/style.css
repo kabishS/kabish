@@ -247,16 +247,22 @@ img { max-width: 100%; display: block; }
         flex-direction: column;
         justify-content: center;
         gap: 2.25rem;
-        background-color: rgba(15, 23, 42, 0.98);
+        background-color: #0F172A;
+        -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
-        transform: translateX(100%);
-        transition: transform 0.35s ease;
         z-index: 55;
         margin: 0;
         padding: 0;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+        /* Default closed state: not displayed at all. This is the most
+           reliable way to guarantee no overlap with page content, even if
+           a browser mishandles opacity/transition timing. */
+        display: none;
     }
     .nav-list.is-open {
-        transform: translateX(0);
+        display: flex;
+        opacity: 1;
     }
     .nav-list li { width: 100%; text-align: center; }
     .nav-link {
