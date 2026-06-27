@@ -1,98 +1,99 @@
- 💼 Personal Portfolio Website
+# 💼 Personal Portfolio Website
 
-A modern, responsive, and interactive personal portfolio website built using HTML, CSS, JavaScript and Tidio(chatbot). This portfolio showcases my skills, projects, certifications, education, and contact information while highlighting my journey as a Java Full Stack Developer.
+A modern, responsive, and interactive personal portfolio website built using **HTML, CSS, JavaScript, Bootstrap**, and **Tidio (chatbot)**. This portfolio showcases my skills, projects, certifications, education, and contact information while highlighting my journey as a Java Full Stack Developer.
 
- ✨ Features
-
- 🏠 Responsive Landing Page
- 👨‍💻 About Me Section
- 🛠️ Technical Skills Showcase
- 🚀 Featured Projects
- 📜 Certifications
- 🎓 Education Details
- 📞 Contact Section
- 💬 AI Chat Support using **Tidio**
- 🌙 Modern and Clean UI
- 📱 Fully Responsive Design
- ⚡ Smooth Scrolling and Interactive Animations
- 🔗 Social Media Integration
- 🔍 SEO Optimized
+🌐 **Live Demo:** [https://kabishs.github.io/Kabish/](https://kabishs.github.io/Kabish/)
 
 ---
 
- 🛠️ Technologies Used
+## ✨ Features
 
- HTML5 – Page Structure
- CSS3 – Styling and Responsive Design
- JavaScript (ES6) – Interactive Functionality
- Tailwind CSS – Utility-First CSS Framework
- Font Awesome – Icons
- Google Fonts – Typography
- Tidio – AI Chatbot Integration
- Git & GitHub – Version Control
+- 🏠 Responsive Landing Page
+- 👨‍💻 About Me Section
+- 🛠️ Technical Skills Showcase
+- 🚀 Featured Projects
+- 📜 Certifications
+- 🎓 Education Details
+- 📞 Contact Section
+- 💬 AI Chat Support using Tidio
+- 🌙 Modern and Clean UI
+- 📱 Fully Responsive Design
+- ⚡ Smooth Scrolling and Interactive Animations
+- 🔗 Social Media Integration
+- 🔍 SEO Optimized
 
 ---
 
- 📂 Project Structure
+## 🛠️ Technologies Used
 
+- **HTML5** – Page Structure
+- **CSS3** – Styling and Responsive Design
+- **JavaScript (ES6)** – Interactive Functionality
+- **Bootstrap** – Responsive Grid & Utility Classes
+- **Bootstrap Icons** – Icons
+- **Google Fonts** – Typography
+- **Tidio** – AI Chatbot Integration
+- **Git & GitHub** – Version Control
 
+---
+
+## 📂 Project Structure
+
+```
 Portfolio/
 │
 ├── index.html
-├── css/
+├── CSS/
 │   └── style.css
-├── images/
-├── js/
+├── JS/
 │   └── script.js
+├── images/
+├── pdf/
+│   └── Kabish_Resume.pdf
 └── README.md
+```
 
 ---
 
- 🚀 Live Demo
-
-🌐 Website https://kabishs.github.io/kabish/
-
----
-
- 🎯 Highlights
+## 🎯 Highlights
 
 This portfolio showcases:
 
- Java Full Stack Development
- Frontend Web Development
- AI Exploration
- Responsive Web Design
- Modern UI/UX Design
- Git & GitHub Projects
+- Java Full Stack Development
+- Frontend Web Development
+- AI Exploration
+- Responsive Web Design
+- Modern UI/UX Design
+- Git & GitHub Projects
 
 ---
 
- 📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 This project helped me strengthen my knowledge of:
 
- HTML5 Semantic Elements
- CSS3 & Responsive Design
- JavaScript DOM Manipulation
- Modern UI/UX Principles
- SEO Optimization
- Git & GitHub Workflow
- AI Chatbot Integration with Tidio
- Portfolio Development Best Practices
+- HTML5 Semantic Elements
+- CSS3 & Responsive Design
+- JavaScript DOM Manipulation
+- Modern UI/UX Principles
+- SEO Optimization
+- Git & GitHub Workflow
+- AI Chatbot Integration with Tidio
+- Performance Optimization (lazy loading, minimal dependencies)
+- Portfolio Development Best Practices
 
 ---
 
- 📬 Connect With Me
+## 📬 Connect With Me
 
- 💻 **GitHub:** https://github.com/kabishS
- 💼 **LinkedIn:** https://www.linkedin.com/in/kabish/
- 🧩 **LeetCode:** https://leetcode.com/u/kabish10/
- 📷 **Instagram:** https://www.instagram.com/itz._.kabish
+- 💻 GitHub: [github.com/kabishS](https://github.com/kabishS)
+- 💼 LinkedIn: [linkedin.com/in/kabish](https://www.linkedin.com/in/kabish/)
+- 🧩 LeetCode: [leetcode.com/u/kabish10](https://leetcode.com/u/kabish10/)
+- 📷 Instagram: [@itz._.kabish](https://www.instagram.com/itz._.kabish)
 
 ---
 
 ## 👨‍💻 Author
 
 **Kabish S**
-
-**Java Full Stack Developer | Frontend Developer | Manual QA Tester | AI Enthusiast**
+Java Full Stack Developer | Frontend Developer | Manual QA Tester | AI Enthusiast
