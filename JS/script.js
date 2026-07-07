@@ -1,3 +1,37 @@
+/* ── Preloader ── */
+(function () {
+    const preloader = document.getElementById("preloader");
+    if (!preloader) return;
+
+    const MIN_DISPLAY_TIME = 900; // Minimum time to show the preloader
+    const shownAt = Date.now();
+
+    function hidePreloader() {
+        const elapsed = Date.now() - shownAt;
+        const remaining = Math.max(MIN_DISPLAY_TIME - elapsed, 0);
+
+        setTimeout(() => {
+            preloader.classList.add("loaded");
+
+            // Remove from DOM after the fade-out finishes
+            preloader.addEventListener("transitionend", () => {
+                preloader.remove();
+            }, { once: true });
+
+        }, remaining);
+    }
+
+    // Wait until all images, fonts, and scripts have loaded
+    if (document.readyState === "complete") {
+        hidePreloader();
+    } else {
+        window.addEventListener("load", hidePreloader);
+    }
+
+    // Safety timeout in case a resource never finishes loading
+    setTimeout(hidePreloader, 8000);
+})();
+
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
 /* ── Mobile Menu (fixed full-screen overlay) ── */
