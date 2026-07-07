@@ -3,32 +3,25 @@
     const preloader = document.getElementById("preloader");
     if (!preloader) return;
 
-    const MIN_DISPLAY_TIME = 900; // Minimum time to show the preloader
+    const MIN_DISPLAY_TIME = 900; // ms, so it never just flashes on fast connections
     const shownAt = Date.now();
 
     function hidePreloader() {
         const elapsed = Date.now() - shownAt;
         const remaining = Math.max(MIN_DISPLAY_TIME - elapsed, 0);
-
-        setTimeout(() => {
-            preloader.classList.add("loaded");
-
-            // Remove from DOM after the fade-out finishes
-            preloader.addEventListener("transitionend", () => {
-                preloader.remove();
-            }, { once: true });
-
-        }, remaining);
+        setTimeout(() => preloader.classList.add("loaded"), remaining);
     }
 
-    // Wait until all images, fonts, and scripts have loaded
+    // 'load' fires only once ALL resources (images, fonts, scripts) are done —
+    // on a slow connection this naturally takes longer, no faking needed.
     if (document.readyState === "complete") {
         hidePreloader();
     } else {
         window.addEventListener("load", hidePreloader);
     }
 
-    // Safety timeout in case a resource never finishes loading
+    // Safety net: if something (e.g. a slow third-party script) never fires
+    // 'load', don't trap the visitor behind the preloader forever.
     setTimeout(hidePreloader, 8000);
 })();
 
