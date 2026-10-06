@@ -6,7 +6,7 @@ A modern, responsive, and interactive personal portfolio website built using **H
 
 ---
 
-## ✨ Features
+## ✨ Features.
 
 - 🏠 Responsive Landing Page
 - 👨‍💻 About Me Section
