@@ -1,0 +1,15 @@
+# Kabish S
+
+> B.Tech Information Technology student and aspiring Java full stack developer from Coimbatore, Tamil Nadu, India. Experience in full stack development and software testing (Playwright). Open to internships and junior developer roles.
+
+## Main pages
+- [Portfolio](https://kabishs.github.io/kabish/): About, skills, projects, GitHub activity, internships, education and certificates
+- [Resume (PDF)](https://kabishs.github.io/kabish/assets/docs/Kabish_S_Resume.pdf): Current resume
+
+## Profiles
+- [GitHub](https://github.com/kabishS)
+- [LinkedIn](https://www.linkedin.com/in/kabish/)
+- [LeetCode](https://leetcode.com/u/kabish10/)
+
+## Contact
+- Email: kabishvimala@gmail.com

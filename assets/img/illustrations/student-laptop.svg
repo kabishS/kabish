@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-labelledby="t">
+<title id="t">Illustration of a college student coding on a laptop</title>
+<circle cx="240" cy="205" r="172" fill="#D3DBF0"/>
+<g font-family="Consolas,Menlo,monospace" font-weight="700" text-anchor="middle">
+  <rect x="38" y="76" width="104" height="52" rx="14" fill="#fff" stroke="#C9D1DE" stroke-width="2"/><text x="90" y="110" font-size="24" fill="#2B4EFF">&lt;/&gt;</text>
+  <rect x="340" y="56" width="108" height="52" rx="14" fill="#0F1B2D"/><text x="394" y="90" font-size="22" fill="#fff">Java</text>
+  <rect x="374" y="148" width="74" height="40" rx="12" fill="#2B4EFF"/><text x="411" y="175" font-size="20" fill="#fff">{ }</text>
+</g>
+<rect x="50" y="354" width="88" height="20" rx="3" fill="#0F1B2D"/>
+<rect x="58" y="336" width="74" height="18" rx="3" fill="#8FA2FF"/>
+<rect x="54" y="320" width="70" height="16" rx="3" fill="#5B77FF"/>
+<path d="M112 376 C112 294 160 264 240 260 C320 264 368 294 368 376Z" fill="#2B4EFF"/>
+<rect x="221" y="214" width="38" height="50" rx="14" fill="#B37A50"/>
+<ellipse cx="240" cy="176" rx="50" ry="56" fill="#C58B5E"/>
+<circle cx="190" cy="183" r="9" fill="#C58B5E"/><circle cx="290" cy="183" r="9" fill="#C58B5E"/>
+<path d="M189 174 C183 118 212 100 244 102 C280 102 299 128 291 174 C284 152 270 142 244 142 C216 142 198 152 189 174Z" fill="#161C2B"/>
+<g fill="none" stroke="#0F1B2D" stroke-width="3"><circle cx="222" cy="181" r="12"/><circle cx="258" cy="181" r="12"/><path d="M234 181h12"/></g>
+<circle cx="222" cy="182" r="3.5" fill="#0F1B2D"/><circle cx="258" cy="182" r="3.5" fill="#0F1B2D"/>
+<path d="M226 207 Q240 218 254 207" fill="none" stroke="#6B3F22" stroke-width="3" stroke-linecap="round"/>
+<path d="M134 314 C120 348 140 368 166 368" fill="none" stroke="#2B4EFF" stroke-width="30" stroke-linecap="round"/>
+<path d="M346 314 C360 348 340 368 314 368" fill="none" stroke="#2B4EFF" stroke-width="30" stroke-linecap="round"/>
+<rect x="146" y="280" width="188" height="90" rx="10" fill="#C5CDDC" stroke="#A9B4C9" stroke-width="2"/>
+<circle cx="240" cy="325" r="9" fill="#fff" opacity=".9"/>
+<rect x="124" y="368" width="232" height="9" rx="4.5" fill="#97A2B8"/>
+<circle cx="166" cy="366" r="12" fill="#C58B5E"/><circle cx="314" cy="366" r="12" fill="#C58B5E"/>
+<rect x="24" y="377" width="432" height="14" rx="7" fill="#0F1B2D"/>
+<rect x="386" y="344" width="30" height="33" rx="5" fill="#0F1B2D"/>
+<path d="M416 352h6a8 8 0 0 1 0 16h-6" fill="none" stroke="#0F1B2D" stroke-width="4"/>
+<path d="M396 336q-5-8 0-14M406 336q-5-8 0-14" stroke="#8FA2FF" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
